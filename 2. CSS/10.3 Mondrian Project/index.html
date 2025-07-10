@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .painting{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container{
+      display: grid;
+      background-color: black;
+      height: 748px;
+      width: 748px;
+      grid-template-columns: 320px 428px;
+      grid-template-rows: 414px 334px;
+      gap: 9px;
+    }
+
+    .red{
+      height: 414px;
+      width: 320px;
+      background-color: #E72F24;
+    }
+
+    .white1{
+      height: 414px;
+      width: 419px;
+      background-color: #F0F1EC;
+    }
+
+    .bottom-left{
+      height: 325px;
+      width: 320px;
+
+      display: grid;
+      gap: 9px;
+      grid-template-rows: 296px 20px;
+    }
+    
+    .upper{
+      background-color: #F0F1EC;
+    }
+
+    .bottom{
+      background-color: #F0F1EC;
+    }
+
+    .bottom-right{
+      height: 325px;
+      width: 419px;
+
+      display: grid;
+      grid-template-columns: 360px 50px;
+      grid-template-rows: 296px 20px;
+      gap: 9px;
+    }
+
+    .white4{
+      background-color: #F0F1EC;
+      height: 100%;
+    }
+
+    .right-long{
+      grid-row: span 2;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blue{
+      background-color: #004592;
+      height: 130px;
+      border-bottom: 19px solid black;
+    }
+
+    .white5{
+      background-color: #F0F1EC;
+      height: 176px;
+    }
+
+    .below-long{
+      display: grid;
+      grid-template-columns: 196px 153px;
+      grid-template-rows: 20px;
+      gap: 9px;
+    }
+
+    .yellow{
+      background-color: #F9D01E;
+    }
+
+    .black{
+      background-color: #232629;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="painting">
+    <div class="container">
+  
+      <div class="box red"></div>
+      <div class="box white1"></div>
+  
+      <div class="box bottom-left">
+        <div class="upper"></div>
+        <div class="bottom"></div>
+      </div>
+  
+      <div class="box bottom-right">
+        <div class="box white4"></div>
+        <div class="right-long">
+          <div class="box blue"></div>
+          <div class="box white5"></div>
+        </div>
+        <div class="below-long">
+          <div class="box yellow"></div>
+          <div class="box black"></div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+</body>
+
+</html>
